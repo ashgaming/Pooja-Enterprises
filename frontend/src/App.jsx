@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -8,6 +8,8 @@ import Projects from './pages/Projects';
 import Products from './pages/Products';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
+import LandingPage from './pages/LandingPage';
+
 
 function App() {
   return (
@@ -16,11 +18,13 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<LandingPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/products" element={<Products />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
+
         </Routes>
         <Footer />
       </div>
