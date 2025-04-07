@@ -8,9 +8,9 @@ const AboutUs = () => {
           {/* Hero Section */}
           <div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal text-gray-700 leading-tight mb-12">
-              The pooja emterprises team for founders obsessed with building fast.{" "}
+              The pooja enterprises team for founders obsessed with building fast.{" "}
               <span className="text-gray-300">
-                Our clients raised over $600M+ in 2024 alone.
+                Our clients raised over $6M+ in 2024 alone.
               </span>
             </h1>
             

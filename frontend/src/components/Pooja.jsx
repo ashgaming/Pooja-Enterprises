@@ -8,7 +8,7 @@ const Pooja = () => {
       data-aos-anchor-placement="top-bottom"
     >
       <div
-        className="w-full min-h-[36rem] text-center text-9xl text relative bg-[url('PoojaBg.jpeg')] bg-no-repeat bg-fit bg-top rounded-3xl mb-2 -z-50 "
+        className="w-full min-h-[36rem] text-center text-9xl text relative bg-[url('https://res.cloudinary.com/dyka5knvr/image/upload/v1744023058/PoojaBg_o7zacg.jpg')] bg-no-repeat bg-fit bg-top rounded-3xl mb-2 -z-50 "
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
       > </div>

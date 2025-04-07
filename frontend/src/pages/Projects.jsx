@@ -10,7 +10,7 @@ const Projects = () => {
       categories: ['Development', 'Design'],
       year: '2024',
       bgColor: 'bg-pink-200',
-      image: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743849434/image_rbwh7a.jpg',
+      image: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743832521/WhatsApp_Image_2025-04-05_at_11.21.39_rdnps4.jpg',
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const Projects = () => {
       categories: ['Development', 'Design'],
       year: '2023',
       bgColor: 'bg-gray-100',
-      image: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743849434/image_rbwh7a.jpg',
+      image: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743831955/WhatsApp_Image_2025-04-05_at_11.06.58_oih9ly.jpg',
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const Projects = () => {
       categories: ['Development', 'Design'],
       year: '2024',
       bgColor: 'bg-green-100',
-      image: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743849434/image_rbwh7a.jpg',
+      image: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743832520/WhatsApp_Image_2025-04-05_at_11.21.49_cteuly.jpg',
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ const Projects = () => {
       categories: ['Development', 'Design'],
       year: '2024',
       bgColor: 'bg-blue-100',
-      image: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743849434/image_rbwh7a.jpg',
+      image: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743835945/works_g9yrzi.jpg',
     },
     {
       id: 5,
@@ -42,7 +42,7 @@ const Projects = () => {
       categories: ['Development', 'Design'],
       year: '2024',
       bgColor: 'bg-purple-200',
-      image: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743849434/image_rbwh7a.jpg',
+      image: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1744022859/WhatsApp_Image_2025-04-05_at_12.38.11_1_r59tyq.jpg',
     },
     {
       id: 6,
@@ -50,7 +50,7 @@ const Projects = () => {
       categories: ['Development', 'Design'],
       year: '2023',
       bgColor: 'bg-teal-100',
-      image: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743849434/image_rbwh7a.jpg',
+      image: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1744022863/WhatsApp_Image_2025-04-05_at_12.38.16_pcyfvn.jpg',
     },
   ];
 
@@ -68,11 +68,11 @@ const Projects = () => {
           <h2 className="text-4xl lg:text-5xl font-bold mb-10">Creating next level Mordern<br />Pune</h2>
 
           {/* Filter tabs */}
-          <div className="flex space-x-6">
+          {/* <div className="flex space-x-6">
         <span className="bg-white text-black px-3 py-1 rounded-full text-sm">All</span>
         <span className="px-3 py-1 text-sm">Development</span>
         <span className="px-3 py-1 text-sm">Design</span>
-      </div>
+          </div> */}
 
         </div>
 
