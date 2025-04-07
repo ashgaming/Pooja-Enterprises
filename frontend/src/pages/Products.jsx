@@ -57,7 +57,7 @@ const Products = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative py-20 bg-dark-light">
+      <section className="relative py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -74,7 +74,7 @@ const Products = () => {
       </section>
 
       {/* Features */}
-      <section className="py-20">
+      <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-20">
             {[

@@ -23,48 +23,7 @@ const About = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="text-center"
-            >
-              <History className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4">Our History</h3>
-              <p className="text-gray-600">
-                Founded with a vision to transform the construction landscape, we've grown from a small team to an industry leader.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="text-center"
-            >
-              <Target className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-              <p className="text-gray-600">
-                To deliver exceptional construction solutions while maintaining the highest standards of quality and innovation.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-              className="text-center"
-            >
-              <Lightbulb className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-              <p className="text-gray-600">
-                To be the most trusted name in construction, known for excellence, innovation, and sustainable practices.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+  
 
       {/* Company Overview */}
       <section className="py-20 bg-gray-50">
@@ -75,7 +34,7 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl font-bold mb-6">Company Overview</h2>
+              <h2 className="text-3xl text-black font-bold mb-6">Company Overview</h2>
               <p className="text-gray-600 mb-4">
                 Pooja Enterprises has established itself as a leading construction company, specializing in both residential and commercial projects. Our commitment to quality and innovation has earned us the trust of countless clients.
               </p>

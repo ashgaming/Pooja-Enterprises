@@ -17,45 +17,24 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-dark/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
-    }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className={`fixed w-1/3 top-10 left-1/3 justify-self-center z-50 header-card transition-all duration-300 bg-white/80  ${
+      isScrolled ? 'bg-dark/10 backdrop-blur-md shadow-lg' : 'bg-transparent'
+    } hover:shadow-xl shadow-black`}>
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <Building2 className="h-8 w-8 text-primary" />
-              <span className="text-2xl font-bold text-white">
+              <span className="text-2xl font-bold text-black">
                 Pooja Enterprises
               </span>
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-300 hover:text-primary transition-colors">
-              Home
-            </Link>
-            <Link to="/about" className="text-gray-300 hover:text-primary transition-colors">
-              About
-            </Link>
-            <Link to="/projects" className="text-gray-300 hover:text-primary transition-colors">
-              Projects
-            </Link>
-            <Link to="/products" className="text-gray-300 hover:text-primary transition-colors">
-              Products
-            </Link>
-            <Link to="/team" className="text-gray-300 hover:text-primary transition-colors">
-              Team
-            </Link>
-            <Link to="/contact" className="bg-primary text-dark px-4 py-2 rounded-md hover:bg-primary-dark transition-colors">
-              Contact Us
-            </Link>
-          </div>
-
-          <div className="md:hidden flex items-center">
+          <div className=" flex items-center">
             <button 
               onClick={() => setIsOpen(!isOpen)} 
-              className="text-white"
+              className="text-black"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -68,26 +47,18 @@ const Navbar = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              className="md:hidden bg-dark-light rounded-lg shadow-lg mt-2"
+              transition={{ duration: 0.5 }}
             >
-              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <Link to="/" className="block px-3 py-2 text-gray-300 hover:text-primary rounded-md">
-                  Home
+              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3" onClick={() => setIsOpen(false)}>
+             
+                <Link to="/projects" className="block px-3 py-2 text-black/80 hover:text-primary rounded-md">
+                  What We Did
                 </Link>
-                <Link to="/about" className="block px-3 py-2 text-gray-300 hover:text-primary rounded-md">
-                  About
+                <Link to="/products" className="block px-3 py-2 text-black/80 hover:text-primary rounded-md">
+                  What We Offer
                 </Link>
-                <Link to="/projects" className="block px-3 py-2 text-gray-300 hover:text-primary rounded-md">
-                  Projects
-                </Link>
-                <Link to="/products" className="block px-3 py-2 text-gray-300 hover:text-primary rounded-md">
-                  Products
-                </Link>
-                <Link to="/team" className="block px-3 py-2 text-gray-300 hover:text-primary rounded-md">
-                  Team
-                </Link>
-                <Link to="/contact" className="block px-3 py-2 bg-primary text-dark rounded-md">
-                  Contact Us
+                <Link to="/team" className="block px-3 py-2 text-black/80 hover:text-primary rounded-md">
+                  Our Teams
                 </Link>
               </div>
             </motion.div>

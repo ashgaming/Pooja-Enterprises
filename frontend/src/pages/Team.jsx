@@ -51,9 +51,9 @@ const Team = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <motion.div
+      <section className="relative bg-gray-50">
+      <div className="max-w-7xl pt-10 mx-auto px-4 h-64 bg-[url('https://res.cloudinary.com/dyka5knvr/image/upload/v1743849434/image_rbwh7a.jpg')] bg-cover bg-center bg-no-repeat relative">         
+       <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
