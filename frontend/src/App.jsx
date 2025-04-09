@@ -19,7 +19,7 @@ function App() {
   } , []);
   return (
     <Router>
-      <div className="min-h-screen bg-dark text-gray-100 overflow-x-hidden">
+      <div className="min-h-screen overflow-x-hidden">
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />

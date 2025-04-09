@@ -5,42 +5,42 @@ import { Linkedin, Mail, Phone } from 'lucide-react';
 const teamMembers = [
   {
     id: 1,
-    name: 'Rajesh Kumar',
+    name: 'Lakhan Pawar',
     role: 'Founder & CEO',
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80',
     bio: 'With over 25 years of experience in construction and real estate development.',
   },
   {
     id: 2,
-    name: 'Priya Sharma',
+    name: 'Lakhan Pawar',
     role: 'Chief Architect',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80',
     bio: 'Award-winning architect with expertise in sustainable design.',
   },
   {
     id: 3,
-    name: 'Amit Patel',
+    name: 'Lakhan Pawar',
     role: 'Project Director',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80',
     bio: 'Specializes in managing large-scale commercial projects.',
   },
   {
     id: 4,
-    name: 'Neha Singh',
+    name: 'Lakhan Pawar',
     role: 'Interior Designer',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80',
     bio: 'Creates stunning interior spaces that blend functionality with aesthetics.',
   },
   {
     id: 5,
-    name: 'Vikram Mehta',
+    name: 'Lakhan Pawar',
     role: 'Chief Engineer',
     image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80',
     bio: 'Expert in structural engineering and innovative construction techniques.',
   },
   {
     id: 6,
-    name: 'Anita Desai',
+    name: 'Lakhan Pawar',
     role: 'Finance Director',
     image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80',
     bio: 'Manages financial strategy and ensures project cost optimization.',
@@ -52,15 +52,15 @@ const Team = () => {
     <div className="pt-20">
       {/* Hero Section */}
       <section className="relative bg-gray-50">
-      <div className="max-w-7xl pt-10 mx-auto px-4 h-64 bg-[url('https://res.cloudinary.com/dyka5knvr/image/upload/v1743849434/image_rbwh7a.jpg')] bg-cover bg-center bg-no-repeat relative">         
+      <div className="w-fill mx-5 rounded-3xl pt-10 h-64 bg-[url('https://res.cloudinary.com/dyka5knvr/image/upload/v1743849434/image_rbwh7a.jpg')] bg-cover bg-center bg-no-repeat relative">         
        <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Team</h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold text-white/90 shadow-sm mb-6">Our Team</h1>
+            <p className="text-xl text-white max-w-3xl mx-auto">
               Meet the talented professionals who make Pooja Enterprises a leader in the construction industry.
             </p>
           </motion.div>

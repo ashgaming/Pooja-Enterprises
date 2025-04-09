@@ -3,14 +3,20 @@ import React from 'react'
 const Pooja = () => {
   return (
     <section
-      className="w-[98%] min-h-screen text-center text-9xl text relative bg-black rounded-3xl m-5  "
+      className="w-[98%] min-h-screen text-center text-9xl text relative bg-black rounded-3xl mx-1 md:mx-4"
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
-    >
+      id='about'
+      >
       <div
-        className="w-full min-h-[36rem] text-center text-9xl text relative bg-[url('https://res.cloudinary.com/dyka5knvr/image/upload/v1744023058/PoojaBg_o7zacg.jpg')] bg-no-repeat bg-fit bg-top rounded-3xl mb-2 -z-50 "
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
+  className="min-h-[15rem]  
+  sm:min-h-[20rem] 
+  md:min-h-[20rem] 
+  lg:min-h-[36rem] 
+  2xl:min-h-[50rem]  
+  text-center text-9xl bg-w-screen relative bg-[url('https://res.cloudinary.com/dyka5knvr/image/upload/v1744023058/PoojaBg_o7zacg.jpg')] bg-no-repeat md:bg-full bg-top rounded-3xl mb-2 -z-50 bg-[length:100%_auto]"
+       // data-aos="fade-up"
+      //  data-aos-anchor-placement="top-bottom"
       > </div>
 
 

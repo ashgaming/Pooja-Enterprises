@@ -75,7 +75,7 @@ const LandingPage = () => {
 
         <h2 className="text-xl lg:text-9xl font-bold mb-12 text-white">PROJECTS</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full">
+        <div className="grid grid-cols-4 w-full">
           {projects.map((project, index) => (
             <div key={project.id} className="relative overflow-hidden group cursor-pointer mb-6">
               <img

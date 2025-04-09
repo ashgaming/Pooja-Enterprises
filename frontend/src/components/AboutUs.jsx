@@ -14,7 +14,7 @@ const AboutUs = () => {
               </span>
             </h1>
             
-            <div className="flex flex-col md:flex-row gap-12 md:gap-24">
+            <div className="flex flex-col md:flex-row gap-12 md:gap-24 ">
               <div className="max-w-md">
                 <p className="text-lg font-medium text-gray-800 mb-4">
                 Over 18 years working alongside founders with bold visions and projects that demand precision.                </p>

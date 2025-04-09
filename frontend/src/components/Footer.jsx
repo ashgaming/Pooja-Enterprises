@@ -3,37 +3,38 @@ import { Building2, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-white text-black">
+      <div className='w-full h-[1px] bg-black'></div>
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <Building2 className="h-8 w-8 text-blue-400" />
               <span className="text-2xl font-bold">Pooja Enterprises</span>
             </div>
             <p className="text-gray-400">
-              Building excellence through innovation and dedication since 2008.
+              Building excellence through innovation and dedication since 1992.
             </p>
           </div>
 
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/projects" className="text-gray-400 hover:text-white transition-colors">Projects</Link></li>
-              <li><Link to="/team" className="text-gray-400 hover:text-white transition-colors">Our Team</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
-            </ul>
-          </div>
+          <div className='grid grid-cols-2  gap-8'>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-2">
+                <li><Link to="/#about" className="text-gray-400 hover:text-black transition-colors">About Us</Link></li>
+                <li><Link to="/projects" className="text-gray-400 hover:text-black transition-colors">Projects</Link></li>
+                <li><Link to="/team" className="text-gray-400 hover:text-black transition-colors">Our Team</Link></li>
+              </ul>
+            </div>
 
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
-              <li className="text-gray-400">Commercial Construction</li>
-              <li className="text-gray-400">Residential Projects</li>
-              <li className="text-gray-400">Interior Design</li>
-              <li className="text-gray-400">Renovation</li>
-            </ul>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Services</h3>
+              <ul className="space-y-2">
+                <li className="text-gray-400">Commercial Construction</li>
+                <li className="text-gray-400">Residential Projects</li>
+                <li className="text-gray-400">Interior Design</li>
+                <li className="text-gray-400">Renovation</li>
+              </ul>
+            </div>
           </div>
 
           <div>

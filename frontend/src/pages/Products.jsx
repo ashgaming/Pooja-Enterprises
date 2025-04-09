@@ -57,7 +57,7 @@ const Products = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative py-20 bg-black">
+      <section className="relative py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -65,7 +65,7 @@ const Products = () => {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Our Products</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-6">Our Products</h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Discover our range of premium construction materials and equipment
             </p>
@@ -74,7 +74,7 @@ const Products = () => {
       </section>
 
       {/* Features */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-20">
             {[
@@ -104,9 +104,9 @@ const Products = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-dark-light p-6 rounded-lg text-center"
+                className=" p-6 rounded-lg text-center border-solid border border-gray-200 bg-gray-50 shadow-lg"
               >
-                <feature.icon className="h-12 w-12 text-primary mx-auto mb-4" />
+                <feature.icon className="h-12 w-12 mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
                 <p className="text-gray-400">{feature.description}</p>
               </motion.div>
@@ -114,14 +114,14 @@ const Products = () => {
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product, index) => (
               <motion.div
                 key={product.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-dark-light rounded-lg overflow-hidden group"
+                className="bg-white/50 rounded-lg overflow-hidden group"
               >
                 <div className="relative h-64 overflow-hidden">
                   <img
@@ -129,7 +129,7 @@ const Products = () => {
                     alt={product.name}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute top-4 right-4 bg-primary text-dark px-3 py-1 rounded-full text-sm">
+                  <div className="absolute top-4 right-4 border border-black text-dark px-3 py-1 rounded-full text-sm">
                     {product.category}
                   </div>
                 </div>
@@ -144,7 +144,7 @@ const Products = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="mt-6 w-full bg-primary text-dark py-2 rounded-md hover:bg-primary-dark transition-colors">
+                  <button className="mt-6 w-full bg-black/50 text-white py-2 rounded-md hover:bg-primary-dark transition-colors">
                     Request Quote
                   </button>
                 </div>
@@ -155,7 +155,7 @@ const Products = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-dark mb-8">Need Custom Products?</h2>
           <button className="bg-dark text-white px-8 py-3 rounded-md hover:bg-dark-light transition-colors">

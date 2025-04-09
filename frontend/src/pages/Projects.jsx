@@ -65,7 +65,7 @@ const Projects = () => {
             <span className="text-green-500 text-sm">Our Projects</span>
           </div>
 
-          <h2 className="text-4xl lg:text-5xl font-bold mb-10">Creating next level Mordern<br />Pune</h2>
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-10">Creating next level Mordern<br />Pune</h2>
 
           {/* Filter tabs */}
           {/* <div className="flex space-x-6">
@@ -77,18 +77,18 @@ const Projects = () => {
         </div>
 
         {/* Projects grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
           {projects.map((project) => (
             <div data-aos="fade-up"
               data-aos-anchor-placement="top-bottom" key={project.id} >
-              <div className={`${project.bgColor} rounded-3xl p-10 overflow-hidden mb-6`}>
+              <div className={`${project.bgColor} rounded-3xl p-2 mb-2 md:p-10 overflow-hidden md:mb-6`}>
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-96 object-cover rounded-3xl mb-4 transition-transform transform hover:scale-105"
+                  className="w-full aspect-[16/9] object-cover rounded-3xl md:mb-4 transition-transform transform hover:scale-105"
                 />
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between pl-3">
                 <div>
                   <h3 className="font-bold text-black">{project.title}</h3>
                   <p className="text-xs text-gray-700">{project.categories.join(' & ')}</p>
