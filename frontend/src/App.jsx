@@ -1,14 +1,14 @@
-// import React from 'react';
+import { useEffect , lazy , Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Projects from './pages/Projects';
-import Products from './pages/Products';
-import Team from './pages/Team';
-import LandingPage from './pages/LandingPage';
+const Projects = lazy(()=>import('./pages/Projects'));
+const Products = lazy(()=>import('./pages/Products'));
+const Team = lazy(()=>import('./pages/Team'));
+const LandingPage = lazy(()=>import('./pages/LandingPage'));
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import PageLoader from './components/PageLoader';
 
 function App() {
   useEffect(() => {
@@ -20,15 +20,16 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen overflow-x-hidden">
+        <Suspense fallback={ <PageLoader /> }>
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/products" element={<Products />} />
           <Route path="/team" element={<Team />} />
-
         </Routes>
         <Footer />
+        </Suspense>
       </div>
     </Router>
   );

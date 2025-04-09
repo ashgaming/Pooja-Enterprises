@@ -5,6 +5,7 @@ import AboutUs from '../components/AboutUs';
 import ConractUs from '../components/ConractUs';
 import { motion } from 'framer-motion';
 import { History, Target, Lightbulb } from 'lucide-react';
+import PageLoader from '../components/PageLoader';
 
 const LandingPage = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -81,9 +82,9 @@ const LandingPage = () => {
               <img
                 src={project.src}
                 alt={project.title}
-                className="object-cover transition-transform duration-500 aspect-[9/16] group-hover:scale-110"
+                className="object-cover transition-transform duration-500 aspect-[5/20] md:aspect-[9/20]  group-hover:scale-110"
                 data-aos="fade-up"
-                data-aos-anchor-placement="bottom-bottom"
+                loading='lazy'
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70"></div>
               <div className="absolute bottom-8 left-6 text-white">

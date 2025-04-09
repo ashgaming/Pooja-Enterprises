@@ -15,8 +15,8 @@ const Pooja = () => {
   lg:min-h-[36rem] 
   2xl:min-h-[50rem]  
   text-center text-9xl bg-w-screen relative bg-[url('https://res.cloudinary.com/dyka5knvr/image/upload/v1744023058/PoojaBg_o7zacg.jpg')] bg-no-repeat md:bg-full bg-top rounded-3xl mb-2 -z-50 bg-[length:100%_auto]"
-       // data-aos="fade-up"
-      //  data-aos-anchor-placement="top-bottom"
+       data-aos="fade-up"
+       data-aos-anchor-placement="top-bottom"
       > </div>
 
 
