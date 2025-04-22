@@ -22,10 +22,10 @@ const Navbar = () => {
     isScrolled ? 'bg-dark/10 backdrop-blur-md shadow-lg' : 'bg-transparent'
   } hover:shadow-xl shadow-black ` }
 >
-      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8" >
         <div className="flex justify-between h-14">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2">
+            <Link to="/" onClick={() => setIsOpen(!isOpen)} className="flex items-center space-x-2">
               <span className="text-2xl font-bold text-black">
                 Pooja Enterprises
               </span>
@@ -50,15 +50,15 @@ const Navbar = () => {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="px-2 pb-3 space-y-1 sm:px-3" onClick={() => setIsOpen(false)}>
+              <div className="px-2 pb-3 space-y-1 sm:px-3">
              
-                <Link to="/projects" className="block pb-2 font-bold  text-black/80 hover:text-primary rounded-md">
+                <Link to="/projects" onClick={() => setIsOpen(!isOpen)} className="block pb-2 font-bold  text-black/80 hover:text-primary rounded-md">
                   What We Did
                 </Link>
-                <Link to="/products" className="block py-2 font-bold text-black/80 hover:text-primary rounded-md">
+                <Link to="/products" onClick={() => setIsOpen(!isOpen)} className="block py-2 font-bold text-black/80 hover:text-primary rounded-md">
                   What We Offer
                 </Link>
-                <Link to="/team" className="block py-2 font-bold text-black/80 hover:text-primary rounded-md">
+                <Link to="/team" onClick={() => setIsOpen(!isOpen)} className="block py-2 font-bold text-black/80 hover:text-primary rounded-md">
                   Our Teams
                 </Link>
               </div>

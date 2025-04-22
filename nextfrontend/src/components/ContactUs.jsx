@@ -1,19 +1,18 @@
-import React from 'react';
+'use client';
+
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
-const ContactUs = () => {
+export default function ContactUs() {
   return (
     <section className="py-16 bg-gray-50 text-black rounded-2xl">
       <div className="container mx-auto px-4 max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          CONTACT US
-        </h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">CONTACT US</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {/* Contact Form */}
           <div className="order-2 md:order-1">
-            <form className="space-y-6">
+            <form className="space-y-6" aria-label="Contact us form">
               <div>
                 <input
                   type="text"
@@ -52,7 +51,8 @@ const ContactUs = () => {
 
               <button
                 type="submit"
-                className="w-full p-4 bg-black hover:bg-black/50  text-white font-semibold rounded-lg transition-colors duration-300"
+                className="w-full p-4 bg-black hover:bg-black/50 text-white font-semibold rounded-lg transition-colors duration-300"
+                aria-label="Send message"
               >
                 SEND MESSAGE
               </button>
@@ -104,17 +104,18 @@ const ContactUs = () => {
 
             {/* Map */}
             <div className="bg-gray-200 h-64 rounded-lg overflow-hidden">
-              {/* Placeholder for map integration */}
-              <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.4644929139952!2d73.81320677616546!3d18.56354739914135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3cf6fd485f%3A0x3807395fe0ddce1e!2sWest%20Avenue!5e0!3m2!1sen!2sin!4v1744187051249!5m2!1sen!2sin" 
-                className='w-full h-full' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.4644929139952!2d73.81320677616546!3d18.56354739914135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3cf6fd485f%3A0x3807395fe0ddce1e!2sWest%20Avenue!5e0!3m2!1sen!2sin!4v1744187051249!5m2!1sen!2sin"
+                className="w-full h-full"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Pooja Enterprises Location"
+              ></iframe>
             </div>
           </motion.div>
         </div>
       </div>
     </section>
   );
-};
-
-export default ContactUs;
+}

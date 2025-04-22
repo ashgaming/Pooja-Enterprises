@@ -1,12 +1,27 @@
-import React, { useState } from 'react';
-const Hero = React.lazy(()=> import('../components/Hero'));
-const Pooja = React.lazy(()=> import('../components/Pooja'));
-const AboutUs = React.lazy(()=> import('../components/AboutUs'));
-import ConractUs from '../components/ConractUs';
+'use client';
+
+import { useState } from 'react';
+import dynamic from 'next/dynamic';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { History, Target, Lightbulb } from 'lucide-react';
-import ComponentLoader from '../components/ComponentLoader';
-const LandingPage = () => {
+
+// Dynamically import components with Next.js dynamic
+const Hero = dynamic(() => import('../components/Hero'), {
+  loading: () => <ComponentLoader />,
+});
+const Pooja = dynamic(() => import('../components/Pooja'), {
+  loading: () => <ComponentLoader />,
+});
+const AboutUs = dynamic(() => import('../components/AboutUs'), {
+  loading: () => <ComponentLoader />,
+});
+const ContactUs = dynamic(() => import('../components/ContactUs'), {
+  loading: () => <ComponentLoader />,
+});
+const ComponentLoader = dynamic(() => import('../components/ComponentLoader'));
+
+export default function Home() {
   const [activeSlide, setActiveSlide] = useState(0);
 
   // Project data
@@ -14,25 +29,17 @@ const LandingPage = () => {
     { id: '01', title: 'Square Project', src: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743831955/WhatsApp_Image_2025-04-05_at_11.06.58_oih9ly.jpg' },
     { id: '02', title: 'Square Project', src: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743835692/bg_g3yezj.jpg' },
     { id: '03', title: 'Square Project', src: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743835945/works_g9yrzi.jpg' },
-    { id: '04', title: 'Square Project', src: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743831955/work_vwywkf.jpg' }
+    { id: '04', title: 'Square Project', src: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743831955/work_vwywkf.jpg' },
   ];
 
   return (
     <div className="bg-white text-black">
       {/* Hero Section */}
-      <React.Suspense fallback={<ComponentLoader />}>
-        {/* Hero Section */}
-        <Hero />
-      </React.Suspense>
+      <Hero />
 
-      <React.Suspense fallback={<ComponentLoader />}>
-        <AboutUs />
-      </React.Suspense>
+      <AboutUs />
 
-      <React.Suspense fallback={<ComponentLoader />}>
-        <Pooja />
-      </React.Suspense>
-
+      <Pooja />
 
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
@@ -46,7 +53,7 @@ const LandingPage = () => {
               <History className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-4">Our History</h3>
               <p className="text-gray-600">
-                Founded with a vision to transform the construction landscape, we've grown from a small team to an industry leader.
+                Founded with a vision to transform the construction landscape, we&apos;ve grown from a small team to an industry leader.
               </p>
             </motion.div>
             <motion.div
@@ -77,21 +84,20 @@ const LandingPage = () => {
         </div>
       </section>
 
-
-
       <section className="py-16 bg-black w-screen flex flex-col items-center rounded-3xl">
-
         <h2 className="text-xl lg:text-9xl font-bold mb-12 text-white">PROJECTS</h2>
 
         <div className="grid grid-cols-4 w-full">
           {projects.map((project, index) => (
             <div key={project.id} className="relative overflow-hidden group cursor-pointer mb-6">
-              <img
+              <Image
                 src={project.src}
                 alt={project.title}
-                className="object-cover transition-transform duration-500 aspect-[5/20] md:aspect-[9/20]  group-hover:scale-110"
+                width={500}
+                height={1000}
+                className="object-cover transition-transform duration-500 aspect-[5/20] md:aspect-[9/20] group-hover:scale-110"
                 data-aos="fade-up"
-                loading='lazy'
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70"></div>
               <div className="absolute bottom-8 left-6 text-white">
@@ -101,18 +107,10 @@ const LandingPage = () => {
             </div>
           ))}
         </div>
-
       </section>
 
-
       {/* Contact Section */}
-          <ConractUs />
-
-
+      <ContactUs />
     </div>
   );
-
-};
-
-
-export default LandingPage;
+}
