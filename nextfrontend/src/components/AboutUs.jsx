@@ -7,7 +7,7 @@ export default function AboutUs() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal text-gray-700 leading-tight mb-12">
             The Pooja Enterprises team for founders obsessed with building fast.{' '}
             <span className="text-gray-300">
-              Our clients raised over $6M+ in 2024 alone.
+            Our clients experienced high levels of customer satisfaction.
             </span>
           </h1>
 
