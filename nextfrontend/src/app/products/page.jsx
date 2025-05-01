@@ -6,53 +6,53 @@ import Image from 'next/image';
 
 const products = [
   {
-    id: 1,
-    name: 'Premium Cement',
-    category: 'Building Materials',
-    image: 'https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?auto=format&fit=crop&q=80',
-    description: 'High-quality cement for durable construction.',
-    features: ['Superior strength', 'Quick setting', 'Weather resistant'],
+    "id": 1,
+    "name": "Premium Cement",
+    "category": "Building Materials",
+    "image": "https://images.unsplash.com/photo-1548263594-a71e7a3d2662?auto=format&fit=crop&q=80",
+    "description": "High-quality cement for durable construction.",
+    "features": ["Superior strength", "Quick setting", "Weather resistant"]
   },
   {
-    id: 2,
-    name: 'Steel Reinforcement',
-    category: 'Structural',
-    image: 'https://images.unsplash.com/photo-1605001011156-cbf0b0f67a51?auto=format&fit=crop&q=80',
-    description: 'Premium grade steel for structural reinforcement.',
-    features: ['High tensile strength', 'Corrosion resistant', 'BIS certified'],
+    "id": 2,
+    "name": "Steel Reinforcement",
+    "category": "Structural",
+    "image": "https://images.unsplash.com/photo-1580983561371-7f4b242d9e34?auto=format&fit=crop&q=80",
+    "description": "Premium grade steel for structural reinforcement.",
+    "features": ["High tensile strength", "Corrosion resistant", "BIS certified"]
   },
   {
-    id: 3,
-    name: 'Architectural Glass',
-    category: 'Finishing',
-    image: 'https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?auto=format&fit=crop&q=80',
-    description: 'Modern architectural glass solutions.',
-    features: ['UV protected', 'Energy efficient', 'Sound insulation'],
+    "id": 3,
+    "name": "Architectural Glass",
+    "category": "Finishing",
+    "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&q=80",
+    "description": "Modern architectural glass solutions.",
+    "features": ["UV protected", "Energy efficient", "Sound insulation"]
   },
   {
-    id: 4,
-    name: 'Premium Tiles',
-    category: 'Finishing',
-    image: 'https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&q=80',
-    description: 'Luxury tiles for floors and walls.',
-    features: ['Stain resistant', 'Anti-skid', 'Easy maintenance'],
+    "id": 4,
+    "name": "Premium Tiles",
+    "category": "Finishing",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
+    "description": "Luxury tiles for floors and walls.",
+    "features": ["Stain resistant", "Anti-skid", "Easy maintenance"]
   },
   {
-    id: 5,
-    name: 'Construction Equipment',
-    category: 'Machinery',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80',
-    description: 'Modern construction machinery for rent.',
-    features: ['Well maintained', 'Operator included', '24/7 support'],
+    "id": 5,
+    "name": "Construction Equipment",
+    "category": "Machinery",
+    "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80",
+    "description": "Modern construction machinery for rent.",
+    "features": ["Well maintained", "Operator included", "24/7 support"]
   },
   {
-    id: 6,
-    name: 'Safety Equipment',
-    category: 'Safety',
-    image: 'https://images.unsplash.com/photo-1601141789098-dee8f1b2d4a6?auto=format&fit=crop&q=80',
-    description: 'Complete range of safety gear.',
-    features: ['ISI marked', 'Comfortable fit', 'Durable'],
-  },
+    "id": 6,
+    "name": "Safety Equipment",
+    "category": "Safety",
+    "image": "https://images.unsplash.com/photo-1603794052298-7864f981b0e9?auto=format&fit=crop&q=80",
+    "description": "Complete range of safety gear.",
+    "features": ["ISI marked", "Comfortable fit", "Durable"]
+  }
 ];
 
 export default function Products() {

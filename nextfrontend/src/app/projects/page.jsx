@@ -20,7 +20,7 @@ const projects = [
     categories: ['Development', 'Design'],
     year: '2023',
     bgColor: 'bg-gray-100',
-    image: 'https://res.cloudinary.com/dyka5knvr/image/upload/v1743831955/WhatsApp_Image_2025-04-05_at_11.06.58_oih9ly.jpg',
+    image: 'https://res.cloudinary.com/dyka5knvr/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1743832523/WhatsApp_Image_2025-04-05_at_11.21.42_p4xaxm.jpg',
   },
   {
     id: 3,
